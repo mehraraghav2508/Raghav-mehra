@@ -1,5 +1,6 @@
 import { aboutCopy, personalInfo } from '../data';
 import { motion } from 'motion/react';
+import { profileImageBase64 } from '../profileImage';
 
 export default function About() {
   return (
@@ -33,7 +34,7 @@ export default function About() {
               className="relative w-full aspect-[2/1] bg-zinc-200 overflow-hidden"
             >
               <img 
-                src="/profile.png" 
+                src={profileImageBase64}
                 alt="Raghav Mehra" 
                 className="w-full h-full object-cover object-center"
               />
